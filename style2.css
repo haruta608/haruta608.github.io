@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 479px) { /* iPhone用 */
+    
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.0;
+}
+
+p {
+    font-size: 7px;
+}
+
+/* section */
+.section-wrap {
+    padding: 10px 0;
+}
+
+.section-inner {
+    width: 380px;
+    margin: 0 auto;
+}
+
+.section-ttl {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.section-ttl.__profile::before {
+    content: "自己紹介";
+    font-size: 3px;
+    color: #000;
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+}
+
+.section-ttl.__dream::before {
+    content: "私の夢";
+    font-size: 3px;
+    color: #000;
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+}
+
+.section-ttl.__hobby::before {
+    content: "私の趣味";
+    font-size: 3px;
+    color: #000;
+    position: absolute;
+    bottom: 100%;
+    left: 5%;
+}
+
+.section-inner-s {
+    display: flex;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: #20b2aa;
+    padding: 5px 25px;
+}
+.header-nav-list, .icon-list {
+    display: flex;
+}
+
+.header-nav-item {
+    font-size: 10px;
+}
+
+.header-nav-item + .header-nav-item {
+    margin-left: 13px;
+}
+
+.icon-item + .icon-item {
+    margin-left: 13px;
+}
+.icon-item {
+    width: 40px;
+}
+
+
+/* home */
+.section-s {
+    text-align: center;
+    margin-top: 30px;
+}
+.home-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+.section-s p {
+    font-size: 8px;
+}
+
+
+/* profile */
+.profile-icon {
+    width: 90px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.profile-item {
+    font-size: 8px;
+}
+
+.profile-item + .profile-item{
+    margin-top: 10px;
+}
+
+
+/* dream */
+.section-dream {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.section-dream:nth-child(even){
+    flex-direction: row-reverse;
+}
+.pc-img {
+    width: 380px;
+    height: 90px;
+    padding: 0 10px;
+}
+.guitar-img {
+    width: 250px;
+    height: 80px;
+    padding: 0 10px;
+}
+
+/* Hobby */
+
+.hobby-item {
+    font-size: 8px;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    color: #000;
+    border-radius: 100vh 0 0 100vh;
+    background: #20b2aa;
+}
+.hobby-item::before {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    content: '';
+    border-radius: 50%;
+    background: #fff;
+}
+.hobby-txt {
+    margin-top: 10px;
+}
+    
+}
