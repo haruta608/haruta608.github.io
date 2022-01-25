@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 767px){ /*PC用*/
+    
 body {
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.5;
@@ -145,4 +147,6 @@ body {
 }
 .hobby-txt {
     margin-top: 20px;
+}
+
 }
