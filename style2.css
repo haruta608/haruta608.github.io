@@ -4,16 +4,16 @@
     
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.0;
+    line-height: 1.5;
 }
 
 p {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 /* section */
 .section-wrap {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .section-inner {
@@ -55,9 +55,9 @@ p {
     left: 5%;
 }
 
-.section-inner-s {
+/* .section-inner-s { 
     display: flex;
-}
+} */
 
 /* header */
 .header {
@@ -107,37 +107,39 @@ p {
 /* profile */
 .profile-icon {
     width: 85px;
-    height: 50px;
+    /* height: 50px; */
     margin-right: 5px;
+    margin-bottom: 5px;
+    float: left;
 }
 
 .profile-item {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .profile-item + .profile-item{
-    margin-top: 10px;
+    margin-top: 2px;
 }
+
+.text-sub {
+    clear: both;
+}
+
 
 
 /* dream */
-.section-dream {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-.section-dream:nth-child(even){
-    flex-direction: row-reverse;
+.dream-sub {
+    margin-top: 20px;
 }
 .pc-img {
-    width: 380px;
-    height: 90px;
+    width: 120px;
     padding: 0 10px;
+    float: right;
 }
 .guitar-img {
-    width: 230px;
-    height: 80px;
+    width: 110px;
     padding: 0 10px;
+    float: left;
 }
 
 /* Hobby */
